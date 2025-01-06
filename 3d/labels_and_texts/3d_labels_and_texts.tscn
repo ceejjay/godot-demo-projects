@@ -574,22 +574,6 @@ font = SubResource("FontVariation_hue2h")
 font_size = 16
 outline_size = 6
 
-[node name="Name2" type="Label" parent="Testers/Label3DHealthBar"]
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 193.0
-offset_bottom = 47.0
-text = "Name"
-vertical_alignment = 1
-
-[node name="LineEdit" type="LineEdit" parent="Testers/Label3DHealthBar"]
-offset_left = 88.0
-offset_top = 16.0
-offset_right = 236.0
-offset_bottom = 47.0
-text = "Example"
-caret_blink = true
-
 [node name="TextMesh" type="Node3D" parent="Testers"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, -36)
 
@@ -686,7 +670,5 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "Next  »"
 
-[connection signal="text_changed" from="Testers/Label3DHealthBar/LineEdit" to="Testers/Label3DHealthBar" method="_on_line_edit_text_changed"]
-[connection signal="text_submitted" from="Testers/Label3DHealthBar/LineEdit" to="." method="_on_line_edit_text_submitted"]
 [connection signal="pressed" from="Previous" to="." method="_on_previous_pressed"]
 [connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

@@ -70,8 +70,8 @@ func update_gui() -> void:
 	$Next.disabled = tester_index == testers.get_child_count() - 1
 
 	# Only display player name field if relevant.
-	$Testers/Label3DHealthBar/Name2.visible = str(testers.get_child(tester_index).name) == "Label3DHealthBar"
-	$Testers/Label3DHealthBar/LineEdit.visible = str(testers.get_child(tester_index).name) == "Label3DHealthBar"
+	#$Testers/Label3DHealthBar/Name2.visible = str(testers.get_child(tester_index).name) == "Label3DHealthBar"
+	#$Testers/Label3DHealthBar/LineEdit.visible = str(testers.get_child(tester_index).name) == "Label3DHealthBar"
 
 
 func _on_line_edit_text_submitted(_new_text: String) -> void:

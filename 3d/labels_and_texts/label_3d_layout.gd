@@ -16,7 +16,7 @@ const HEALTH_MARGIN = 25
 const BAR_WIDTH = 100
 
 func _ready() -> void:
-	$LineEdit.text = $Name.text
+	pass#$LineEdit.text = $Name.text
 
 
 func _process(delta: float) -> void:
